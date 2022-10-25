@@ -1,0 +1,186 @@
+@import url("https://fonts.googleapis.com/css2?family=Arimo:wght@400;500;600;700&display=swap");
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Arimo", sans-serif;
+  font-size: 62.5%;
+  min-height: 100vh;
+  /* border: 2px solid red; */
+  background-image: url("./assets/pexels-pixabay-531880.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-position: center;
+}
+.container {
+  /* border: 2px solid red; */
+  z-index: 22;
+  max-width: 500px;
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+  background: white;
+  border-radius: 10px;
+  width: 95%;
+  margin: 2rem 0;
+}
+
+header {
+  font-size: 1.4rem;
+  text-transform: capitalize;
+  letter-spacing: 0.1rem;
+  /* border: 2px solid red; */
+  width: 100%;
+  text-align: center;
+  padding: 1em 0.5em;
+  background: #43c6ac; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #191654,
+    #43c6ac
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #191654,
+    #43c6ac
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: white;
+  border-radius: 10px 10px 0 0;
+}
+
+.form {
+  /* border: 2px solid red; */
+  width: 100%;
+  padding: 2rem 3.2em;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+.input-section {
+  /* border: 2px solid red; */
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  font-size: 1.2rem;
+}
+input {
+  padding: 0.5em;
+  width: 100%;
+  border-radius: 3px;
+  outline: none;
+  border: 1px solid grey;
+  background: #E8F0FE !important;
+}
+label {
+  font-size: 1.3rem;
+  font-weight: bolder;
+}
+i {
+  font-size: 1.4rem;
+}
+.input-section {
+  position: relative;
+}
+.success {
+  position: absolute;
+  top: 41.5px;
+  right: 8px;
+  color: green;
+  /* display: none; */
+  visibility: hidden;
+}
+
+.error {
+  position: absolute;
+  top: 41.5px;
+  right: 8px;
+  color: red;
+  /* display: none;  */
+  visibility: hidden;
+}
+
+.btn {
+  /* border: 2px solid red; */
+  font-size: 1.4rem;
+  padding: 0.4em;
+  background: #43c6ac; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #191654,
+    #43c6ac
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #191654,
+    #43c6ac
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: white;
+  font-weight: bolder;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 0.8rem;
+}
+
+.toggle {
+  display: none;
+}
+p {
+  color: red;
+}
+
+input:focus {
+  border: 2px solid grey;
+}
+#email {
+  background-color: white;
+}
+
+@media screen and (max-width: 600px) {
+  header {
+    font-size: 1.2rem;
+  }
+  .input-section {
+    font-size: 1rem;
+  }
+  label {
+    font-size: 1.1rem;
+  }
+  i {
+    font-size: 1.2rem;
+  }
+  .success {
+    top: 39px;
+    right: 8px;
+  }
+
+  .error {
+    top: 39px;
+    right: 8px;
+  }
+  .btn {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 468px) {
+  header {
+    font-size: 1rem;
+  }
+  .form {
+    padding: 1.5rem 2.5em;
+  }
+}

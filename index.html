@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./index.js" defer></script>
+    <title>Form Validation</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h2 class="registeration-heading">Registeration Form</h2>
+        </header>
+        <form class="form">
+            <div class="input-section">
+                <label for="username">Username</label>
+                <input type="text" name="username" id="username">
+                <i class="fa-solid fa-circle-check success"></i>
+                <i class="fa-solid fa-circle-exclamation error"></i>
+                <p class="error-message toggle">error</p>
+            </div>
+            <div class="input-section">
+                <label for="email">Email</label>
+                <input type="text" name="email" id="email">
+                <i class="fa-solid fa-circle-check success"></i>
+                <i class="fa-solid fa-circle-exclamation error"></i>
+                <p class="error-message toggle">error</p>
+            </div>
+            <div class="input-section">
+                <label for="number">Phone Number</label>
+                <input type="number" name="number" id="number">
+                <i class="fa-solid fa-circle-check success"></i>
+                <i class="fa-solid fa-circle-exclamation error"></i>
+                <p class="error-message toggle">error</p>
+            </div>
+            <div class="input-section">
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password">
+                <i class="fa-solid fa-circle-check success"></i>
+                <i class="fa-solid fa-circle-exclamation error"></i>
+                <p class="error-message toggle">error</p>
+            </div>
+            <div class="input-section">
+                <label for="password-check success">Confirm Password</label>
+                <input type="password" name="password-check" id="password-check">
+                <i class="fa-solid fa-circle-check success"></i>
+                <i class="fa-solid fa-circle-exclamation error"></i>
+                <p class="error-message toggle">error</p>
+            </div>
+            <button class="btn">SUBMIT</button>
+        </form>
+    </div>
+
+    <script src="https://kit.fontawesome.com/cfa93dbc18.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+</body>
+</html>
